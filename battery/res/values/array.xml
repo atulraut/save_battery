@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string-array name="updateInterval">
+	<item name="500">Disable Network</item>
+	<item name="600">Disable Bluetooth</item>
+	<item name="700">Disable Wifi</item>
+        <item name="1000">Lower Screen Brightness</item>
+        <item name="5000">Disable Wallpaper</item>
+        <item name="30000">Disable Synchronization</item>
+        <item name="40000">Disable Localization</item>	
+    </string-array>
+    
+    <string-array name="updateIntervalValues">
+        <item name="500">500</item>
+        <item name="600">600</item>
+        <item name="700">700</item>
+         <item name="1000">1000</item>
+        <item name="5000">5000</item>
+        <item name="30000">30000</item>
+        <item name="40000">40000</item>
+   </string-array>
+</resources>

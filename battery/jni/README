@@ -1,0 +1,15 @@
+deamon_bat dependency : 
+To check battery status :
+Add below flag in msm8974_defconfig file located
+at kernel/arch/arm/config
+CONFIG_TEST_POWER=y
+
+# How to compile JNI
+Build :
+
+1] android update project -p . --target android-10
+2] $NDK_BUILD : android-ndk-r9c/ndk-build 
+3] ant debug
+4] cd bin
+5] adb install Native-debug.apk [Do connect your device to system.]
+6] sh run.sh [To launch the app]

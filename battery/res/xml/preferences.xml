@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="main">
+
+	<PreferenceCategory 
+		android:title="Battery Status :"
+		android:key="battery_category" >
+	
+		<EditTextPreference
+	        android:key="lowBatteryLevel"
+	        android:title="Set Low Battery Level" 
+	        android:summary="Define the percentage that you consider as low battery"
+	        android:defaultValue="15"
+	        android:numeric="integer"
+	        android:maxLength="2" />
+
+		<com.p.battery.ListPreferenceMultiSelect android:defaultValue="#ALL#"
+                android:key="pref_upload_buckets_image"
+                android:title="Triggers"
+                android:dialogTitle="Low Battery Triggers"
+                android:summary="Disable component on low battery triggers"
+                android:entries="@array/updateInterval"
+                android:entryValues="@array/updateIntervalValues"/>
+
+		<Preference 
+		android:key="toast_key"
+		android:title="About"
+                android:dialogTitle="contact info">
+		</Preference>
+	</PreferenceCategory>
+
+
+
+</PreferenceScreen>
